@@ -27,7 +27,7 @@ return (count);
 }
 else if (format[i] == '%' && format[i + 1] == '\0')
 {
-return (count);
+return (-1);
 }
 else if (format[i] == '%')
 {
