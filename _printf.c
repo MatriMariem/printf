@@ -35,6 +35,7 @@ f = getspecifier(format[i + 1]);
 i += 2;
 if (f == '\0')
 {
+_putchar('%');
 _putchar(format[i - 1]);
 count += 2;
 }
