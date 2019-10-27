@@ -25,7 +25,7 @@ if (format[i] == '\0')
 {
 return (count);
 }
-else if (format[i] == '%' && format[i + 1] == '\0')
+else if (format[i] == '%' && (format[i + 1] == '\0' || format[i + 1] == '\n'))
 {
 return (-1);
 }
