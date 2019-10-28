@@ -2,11 +2,11 @@
 #include <stdarg.h>
 #include <stdio.h>
 /**
-*print_i - prints an integer
+*_print_i - prints an integer
 *@vi: the list of arguments
 * Return: number of printed characters
 */
-int print_i(va_list vi)
+int _print_i(va_list vi)
 {
 int i, num, div, o, n, count = 0;
 n = va_arg(vi, int);

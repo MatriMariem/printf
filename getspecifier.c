@@ -13,8 +13,8 @@ int i;
 mystr p[] = {
 {'c', print_c},
 {'s', print_s},
-{'i', print_i},
-{'d', print_i},
+{'i', _print_i},
+{'d', _print_i},
 {'\0', '\0'}
 };
 for (i = 0; p[i].letter; i++)
