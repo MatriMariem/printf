@@ -35,9 +35,13 @@ f = getspecifier(format[i + 1]);
 i += 2;
 if (f == '\0')
 {
+if (format[i - 1] != '%')
+{
 _putchar('%');
+count += 1;
+}
 _putchar(format[i - 1]);
-count += 2;
+count += 1;
 }
 else
 {
