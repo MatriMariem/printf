@@ -54,7 +54,7 @@ i--;
 
 for (; i >= 0; i--)
 {
-putchar(string[i]);
+_putchar(string[i]);
 count++;
 }
 return (count);
