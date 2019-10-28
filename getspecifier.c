@@ -17,6 +17,7 @@ mystr p[] = {
 {'d', _print_i},
 {'r', print_rs},
 {'R', print_rot},
+{'b', _print_b},
 {'\0', '\0'}
 };
 for (i = 0; p[i].letter; i++)
