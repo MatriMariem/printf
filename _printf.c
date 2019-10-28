@@ -22,13 +22,9 @@ _putchar(format[i]);
 count++;
 }
 if (format[i] == '\0')
-{
 return (count);
-}
 else if (format[i] == '%' && format[i + 1] == '\0')
-{
 return (-1);
-}
 else if (format[i] == '%')
 {
 f = getspecifier(format[i + 1]);
@@ -44,9 +40,7 @@ _putchar(format[i - 1]);
 count += 1;
 }
 else
-{
 count = count + f(list);
-}
 }
 }
 va_end(list);
