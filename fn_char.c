@@ -75,13 +75,17 @@ for (i = 0; s[i] != '\0'; i++)
 j = 0;
 while ((alpha[j] != '\0') && (s[i] != alpha[j]))
 {
+j++;
+}
 if (s[i] == alpha[j])
 {
 _putchar(rot[j]);
 count++;
-break;
 }
-j++;
+else if (alpha[j] == '\0')
+{
+_putchar(s[i]);
+count++;
 }
 }
 return (count);
