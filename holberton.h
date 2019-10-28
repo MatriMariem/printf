@@ -21,6 +21,6 @@ int(*getspecifier(char))(va_list);
 int _print_i(va_list vi);
 
 int print_rs(va_list rs);
-
+int print_rot(va_list ro);
 
 #endif
