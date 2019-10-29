@@ -13,6 +13,7 @@ int i;
 mystr p[] = {
 {'c', print_c},
 {'s', print_s},
+{'S', print_S},
 {'i', _print_i},
 {'d', _print_i},
 {'b', _print_b},

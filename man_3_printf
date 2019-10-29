@@ -12,14 +12,14 @@
 
 .SH DESCRIPTION
 .B _printf()
-Prints to standard output the 
-.B format 
-string, interpreting 
-.B ‘%’ 
-directives to format numeric and string arguments in a way that is mostly similar to the 
+Prints to standard output the
+.B format
+string, interpreting
+.B ‘%’
+directives to format numeric and string arguments in a way that is mostly similar to the
 .B C ‘printf’ function.
 .SH The conversion specifiers
-.IP %% 
+.IP %%
 prints a single %
 .IP %c
 prints the next argument of type Char (int argument is converted to a character)

@@ -17,6 +17,7 @@ int(*getspecifier(char))(va_list);
 /** fn in file : fn_char.c */
 int print_c(va_list c);
 int print_s(va_list s);
+int print_S(va_list S);
 int print_rs(va_list rs);
 int print_rot(va_list ro);
 /** fn in file : fn_numbers.c */

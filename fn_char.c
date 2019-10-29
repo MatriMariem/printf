@@ -60,6 +60,53 @@ count++;
 return (count);
 }
 /**
+ * print_S - prints a string and returns the length of string
+ * Non printable characters are printed as "\x"
+ * followed by their ASCII values in two digit hexadecimal
+ * @S: the list of arguments
+ * Return: number of printed characters
+ */
+int print_S(va_list S)
+{
+char *string, hex[10];
+int i = 0, n = 0, j = 0;
+unsigned int count = 0;
+
+string = va_arg(S, char *);
+if (string == '\0')
+string = "(null)";
+for (i = 0; string[i]; i++)
+{
+j = 0;
+if ((string[i] > 0 && string[i] < 32) || (string[i] >= 127))
+{
+_putchar('\\');
+_putchar('x');
+n = string[i];
+if (n <= 15)
+_putchar('0');
+while (n > 0)
+{
+if (n % 16 >= 10 && n % 16 <= 15)
+hex[j] = 55 + (n % 16);
+else
+hex[j] = 48 + (n % 16);
+n = n / 16;
+j++;
+}
+for (--j; j >= 0; j--)
+_putchar(hex[j]);
+count += 4;
+}
+else
+{
+_putchar(string[i]);
+count++;
+}
+}
+return (count);
+}
+/**
 *print_rot - prints the rot13'ed string
 *@ro: the arguments list
 *Return: number of printed characters
