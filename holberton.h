@@ -5,11 +5,11 @@
  * struct mystr - pointer to function with corresponding letter
  * @letter: specifier
  * @func: print argument
-*/
+ */
 typedef struct mystr
 {
-char letter;
-int (*func)(va_list);
+	char letter;
+	int (*func)(va_list);
 } mystr;
 int _putchar(char c);
 int _printf(const char *format, ...);
@@ -28,4 +28,5 @@ int _print_u(va_list u);
 int _print_o(va_list o);
 int _print_x(va_list o);
 int _print_X(va_list o);
+int _print_p(va_list p);
 #endif
