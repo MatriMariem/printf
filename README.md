@@ -12,18 +12,18 @@ This is our printf function recoded from scratch, for education purpose.
 * int \_putchar(char c);
 * int \_printf(const char \*format, ...);
 * int(\*getspecifier(char))(va\_list);
-### fn in file : fn\_char.c 
-int print_c(va\_list c);
-int print_s(va\_list s);
-int print_S(va\_list S);
-int print\_rs(va\_list rs);
-int print\_rot(va\_list ro);
+### Functions in file : fn\_char.c 
+* int print_c(va\_list c);
+* int print_s(va\_list s);
+* int print_S(va\_list S);
+* int print\_rs(va\_list rs);
+* int print\_rot(va\_list ro);
 ### fn in file : fn\_numbers.c 
-int _print_i(va_list vi);
-int _print_b(va_list b);
-/** fn in file : fn_uoxX.c */
-int _print_u(va_list u);
-int _print_o(va_list o);
-int _print_x(va_list o);
-int _print_X(va_list o);
-int _print_p(va_list p);
+* int _print_i(va_list vi);
+* int _print_b(va_list b);
+### fn in file : fn_uoxX.c
+* int _print_u(va_list u);
+* int _print_o(va_list o);
+* int _print_x(va_list o);
+* int _print_X(va_list o);
+* int _print_p(va_list p);
