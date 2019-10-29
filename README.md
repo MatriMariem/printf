@@ -27,15 +27,3 @@ This is our printf function recoded from scratch, for education purpose.
 * int _print_x(va_list o);
 * int _print_X(va_list o);
 * int _print_p(va_list p);
-\n
-\n
-\n
-\n
-\n
-\n
-\n
-\n
-\n
-\n
-\n
-\n
