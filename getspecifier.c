@@ -14,6 +14,7 @@ mystr p[] = {
 {'c', print_c},
 {'s', print_s},
 {'S', print_S},
+{'p', _print_p},
 {'i', _print_i},
 {'d', _print_i},
 {'b', _print_b},
