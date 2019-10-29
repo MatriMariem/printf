@@ -1,0 +1,20 @@
+_PRINTF
+NAME _printf - does formatted printing of text
+SYNOPSIS: _printf FORMAT [ARGUMENT]...
+DESCRIPTION
+_printf prints the FORMAT string, interpreting ‘%’ directives and ‘\’ escapes to format numeric and string arguments in a way that is mostly similar to the C ‘printf’ function.
+FORMAT controls the output as in C printf.  Interpreted sequences are:
+\n	new line
+\t	horizontal tab
+%%	a single %
+%c	next argument of type Char
+%s	next argument of type Char *
+%i	next argument of type int
+%d	next decimal argument
+%b	converts int argument into binary
+%r	prints the reversed string
+%R	prints the Rot13'ed string
+NOTE: a single % at the end of FORMAT string is interpreted as error.
+NOTE: a single % followed by unknown specifier is not interpreted.
+AUTHOR
+written by Taieb Chaabini and Mariem Matri.
