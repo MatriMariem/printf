@@ -11,6 +11,7 @@ int _printf(const char *format, ...)
 	unsigned int count = 0, i = 0;
 	int (*f)(va_list);
 	va_list list;
+
 	if (format == '\0')
 		return (-1);
 	va_start(list, format);
@@ -31,13 +32,7 @@ int _printf(const char *format, ...)
 			i += 1;
 			if (f == NULL)
 			{
-				if (format[i] != '%')
-				{
-					_putchar(format[i - 1]);
-					count += 1;
-				}
-				_putchar(format[i]);
-				count += 1;
+				count += strange(format, i);
 			}
 			else
 			{
