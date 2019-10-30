@@ -1,4 +1,4 @@
-i# _printf - format and print data
+# _printf - format and print data
 
 This is our printf function recoded from scratch, for education purpose.
 
