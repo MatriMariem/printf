@@ -8,12 +8,12 @@
  */
 typedef struct mystr
 {
-	char letter;
+	char *letter;
 	int (*func)(va_list);
 } mystr;
 int _putchar(char c);
 int _printf(const char *format, ...);
-int(*getspecifier(char))(va_list);
+int(*getspecifier(const char *format, int i))(va_list);
 /** fn in file : fn_char.c */
 int print_c(va_list c);
 int print_s(va_list s);
@@ -24,9 +24,16 @@ int print_rot(va_list ro);
 int _print_i(va_list vi);
 int _print_b(va_list b);
 /** fn in file : fn_uoxX.c */
-int _print_u(va_list u);
-int _print_o(va_list o);
-int _print_x(va_list o);
-int _print_X(va_list o);
-int _print_p(va_list p);
+int _print_u(va_list);
+int _print_o(va_list);
+int _print_x(va_list);
+int _print_X(va_list);
+int _print_p(va_list);
+
+int strange(const char *format, int i);
+int _plus_i(va_list);
+int _space_i(va_list);
+int _diez_o(va_list);
+int _diez_x(va_list);
+int _diez_X(va_list);
 #endif
