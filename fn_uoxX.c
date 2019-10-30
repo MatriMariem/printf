@@ -111,7 +111,6 @@ int _print_X(va_list X)
 	int i = 0;
 
 	n = va_arg(X, unsigned int);
-	n = '\n';
 	if (n == 0)
 	{
 		_putchar(0 + '0');
