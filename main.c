@@ -14,6 +14,27 @@ int main(void)
 	unsigned int ui;
 	void *addr;
 
+	printf("The 8 task debugger : \n");
+	_printf("%+d\n", 1024);
+	_printf("%+d\n", -1024);
+	_printf("%+d\n", 0);
+	_printf("%+d\n", INT_MAX);
+	_printf("%+d\n", INT_MIN);
+	_printf("There is %+d bytes in %+d KB\n", 1024, 1);
+	_printf("%+d - %+d = %+d\n", 1024, 2048, -1024);
+	_printf("%+d + %+d = %+d\n", INT_MIN, INT_MAX, (INT_MIN + INT_MAX));
+	_printf("%+i\n", 1024);
+	_printf("%+i\n", -1024);
+	_printf("%+i\n", 0);
+	_printf("%+i\n", INT_MAX);
+	_printf("%+i\n", INT_MIN);
+	_printf("There is %+i bytes in %+i KB\n", 1024, 1);
+	_printf("%+i - %+i = %+i\n", 1024, 2048, -1024);
+	_printf("%+i + %+i = %+i\n", INT_MIN, INT_MAX, (INT_MIN + INT_MAX));
+	_printf("% d\n", 1024);
+	_printf("% d\n", -1024);
+	_printf("% d\n", 0);
+	printf("END OF 8 task debuger \n");
 	len = _printf("Let's try to printf a simple sentence.\n");
 	len2 = printf("Let's try to printf a simple sentence.\n");
 	ui = (unsigned int)INT_MAX + 1024;
