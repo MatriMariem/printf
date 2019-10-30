@@ -20,7 +20,7 @@ This is our printf function recoded from scratch, for education purpose.
 * int print_S(va\_list S);
 * int print\_rs(va\_list rs);
 * int print\_rot(va\_list ro);
-### Functions in file (fn\_numbers.c) : 
+### Functions in file (fn\_numbers.c) :
 * int _print_i(va_list vi);
 * int _print_b(va_list b);
 ### Functions in file (fn_uoxX.c) :
